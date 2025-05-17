@@ -10,7 +10,6 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -28,138 +27,107 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.textBoxLink = new System.Windows.Forms.TextBox();
+            this.listBoxHistory = new System.Windows.Forms.ListBox();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(79, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(315, 20);
-            this.textBox1.TabIndex = 0;
-            // 
+
+            // textBoxSearch
+            this.textBoxSearch.Location = new System.Drawing.Point(140, 90);
+            this.textBoxSearch.Name = "textBoxSearch";
+            this.textBoxSearch.Size = new System.Drawing.Size(250, 22);
+
+            // textBoxLink
+            this.textBoxLink.Location = new System.Drawing.Point(140, 130);
+            this.textBoxLink.Size = new System.Drawing.Size(600, 22);
+
+            // listBoxHistory
+            this.listBoxHistory.Location = new System.Drawing.Point(140, 170);
+            this.listBoxHistory.Size = new System.Drawing.Size(600, 120);
+
+            // webBrowser1
+            this.webBrowser1.Location = new System.Drawing.Point(20, 300);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Size = new System.Drawing.Size(720, 300);
+
             // label1
-            // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(111, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(237, 46);
-            this.label1.TabIndex = 1;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.Location = new System.Drawing.Point(270, 20);
             this.label1.Text = "ebay search";
-            // 
+
             // label2
-            // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 2;
+            this.label2.Location = new System.Drawing.Point(60, 90);
             this.label2.Text = "search";
-            // 
+
             // label3
-            // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 171);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 13);
-            this.label3.TabIndex = 3;
+            this.label3.Location = new System.Drawing.Point(20, 130);
             this.label3.Text = "link to search result";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(127, 164);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(544, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(441, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(307, 458);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(112, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Close browser";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(596, 112);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Back";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(127, 208);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(544, 211);
-            this.richTextBox1.TabIndex = 8;
-            this.richTextBox1.Text = "";
-            // 
+
             // label4
-            // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(23, 211);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 13);
-            this.label4.TabIndex = 9;
+            this.label4.Location = new System.Drawing.Point(20, 170);
             this.label4.Text = "Search history";
-            // 
+
+            // buttonSearch
+            this.buttonSearch.Location = new System.Drawing.Point(410, 88);
+            this.buttonSearch.Size = new System.Drawing.Size(75, 25);
+            this.buttonSearch.Text = "Search";
+            this.buttonSearch.Click += new System.EventHandler(this.buttonSearch_Click);
+
+            // buttonBack
+            this.buttonBack.Location = new System.Drawing.Point(500, 88);
+            this.buttonBack.Size = new System.Drawing.Size(75, 25);
+            this.buttonBack.Text = "Back";
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+
+            // buttonClose
+            this.buttonClose.Location = new System.Drawing.Point(320, 610);
+            this.buttonClose.Size = new System.Drawing.Size(100, 25);
+            this.buttonClose.Text = "Close browser";
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
+
             // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 513);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(760, 650);
+            this.Controls.Add(this.textBoxSearch);
+            this.Controls.Add(this.textBoxLink);
+            this.Controls.Add(this.listBoxHistory);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.buttonSearch);
+            this.Controls.Add(this.buttonBack);
+            this.Controls.Add(this.buttonClose);
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.TextBox textBoxLink;
+        private System.Windows.Forms.ListBox listBoxHistory;
+        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button buttonSearch;
+        private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonClose;
     }
 }
-
